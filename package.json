@@ -2,7 +2,7 @@
   "name": "feedback-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://undervalent.github.io/feedback-app",
+  "homepage": "https://undervalent.github.io/feedback",
   "dependencies": {
     "@reach/menu-button": "^0.16.2",
     "@reach/tabs": "^0.16.4",
