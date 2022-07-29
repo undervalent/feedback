@@ -4,9 +4,9 @@ import { Routing } from "./views/shared/routes";
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Routing />
-    </div>
+    </main>
   );
 }
 
