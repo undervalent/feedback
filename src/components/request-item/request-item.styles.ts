@@ -35,18 +35,22 @@ export const Header = styled.header`
   `};
 `;
 export const Headline = styled(Link)`
-  font-weight: bold;
-  font-size: 1.3rem;
-  line-height: 1.9rem;
-  letter-spacing: -0.0180556rem;
-  color: var(--dark-bravo);
-  cursor: pointer;
   text-decoration: none;
+  h2 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    letter-spacing: -0.0180556rem;
+    color: var(--dark-bravo);
+    cursor: pointer;
+    text-decoration: none;
 
-  &:hover {
-    color: var(--primary-bravo);
+    &:hover {
+      color: var(--primary-bravo);
+    }
   }
 `;
+
 export const Text = styled.p`
   font-size: 1.3rem;
   line-height: 1.9rem;

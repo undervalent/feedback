@@ -31,19 +31,32 @@ export const RequestItem: React.FC<IProps> = ({ id }) => {
     <Wrapper>
       <ContentWrapper>
         <Header>
-          <Headline to={`/feedback/${id}`}>{title}</Headline>
+          <Headline to={`/feedback/${id}`}>
+            <h2>{title}</h2>
+          </Headline>
           <Text>{description}</Text>
-          <Category>{_.capitalize(category)}</Category>
+          <Category>
+            <span className="visually-hidden">categorized as</span>
+            {_.capitalize(category)}
+          </Category>
         </Header>
 
-        <UpVotes onClick={handleUpvoteCLick} disabled={hasUpVoted}>
+        <UpVotes
+          onClick={handleUpvoteCLick}
+          disabled={hasUpVoted}
+          aria-label="click to upvote"
+        >
           <FaChevronUp color={iconColor} />
+          <span className="visually-hidden">{title} has</span>
           {upvotes}
+          <span className="visually-hidden">upvotes</span>
         </UpVotes>
 
         <Comments>
           <FaComment color="#CDD2EE" />
+          <span className="visually-hidden">{title} has</span>
           {commentCount}
+          <span className="visually-hidden">comments</span>
         </Comments>
       </ContentWrapper>
     </Wrapper>

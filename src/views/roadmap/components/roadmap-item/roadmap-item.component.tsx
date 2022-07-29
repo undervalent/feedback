@@ -38,18 +38,25 @@ export const RoadMapItem: React.FC<IProps> = ({ data, colorBorder }) => {
         <Header>
           <Headline>{title}</Headline>
           <Text>{description}</Text>
-          <Category>{_.capitalize(category)}</Category>
+          <Category>
+            <span className="visually-hidden">categorized as</span>
+            {_.capitalize(category)}
+          </Category>
         </Header>
 
         <Footer>
           <UpVotes onClick={handleUpvoteCLick}>
             <FaChevronUp color="var(--primary-bravo)" />
+            <span className="visually-hidden">{title} has</span>
             {upvotes}
+            <span className="visually-hidden">upvotes</span>
           </UpVotes>
 
           <Comments>
             <FaComment color="#CDD2EE" />
+            <span className="visually-hidden">{title} has</span>
             {commentCount}
+            <span className="visually-hidden">comments</span>
           </Comments>
         </Footer>
       </ContentWrapper>

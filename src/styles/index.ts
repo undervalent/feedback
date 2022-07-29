@@ -12,12 +12,9 @@ ${CSSReset}
   --primary-charlie: #F49F85;;
   --primary-delta: #62BCFA;
 
-
   --light-alpha: #fff;
   --light-bravo: #f2f4ff;
   --light-charlie: #f7f8fd;
-
-
 
   --danger-alpha: #D73737;
   --danger-bravo: #E98888;

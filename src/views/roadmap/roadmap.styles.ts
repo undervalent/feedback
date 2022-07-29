@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import media from "styled-media-query";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
   ${media.greaterThan("small")`
     width: 68.9rem;
     margin: 2.8em auto 0 auto;

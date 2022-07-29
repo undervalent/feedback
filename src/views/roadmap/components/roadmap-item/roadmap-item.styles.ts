@@ -10,7 +10,7 @@ export const Wrapper = styled(Link)`
   text-decoration: none;
 `;
 
-export const ContentWrapper = styled.div<IProps>`
+export const ContentWrapper = styled.article<IProps>`
   background: var(--light-alpha);
   border-radius: 1rem;
   padding: 2.4rem;
@@ -34,7 +34,7 @@ export const Header = styled.header`
   gap: 1.5rem;
   text-align: left;
 `;
-export const Headline = styled.h2`
+export const Headline = styled.h3`
   font-weight: bold;
   font-size: 1.3rem;
   line-height: 1.9rem;

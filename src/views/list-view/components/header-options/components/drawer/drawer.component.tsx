@@ -12,10 +12,10 @@ export const Drawer = () => {
       <div className="container__overlay"></div>
       <div className="container__sidebar">
         <div>
-          <FilterMenu />
+          <RoadmapLegend />
         </div>
         <div>
-          <RoadmapLegend />
+          <FilterMenu />
         </div>
       </div>
     </Wrapper>

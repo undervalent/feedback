@@ -9,8 +9,8 @@ export const TabletHeader = () => {
   return (
     <Wrapper>
       <ListHeader />
-      <RoadmapLegend />
       <FilterMenu />
+      <RoadmapLegend />
     </Wrapper>
   );
 };
